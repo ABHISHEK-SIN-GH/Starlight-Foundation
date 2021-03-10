@@ -4,9 +4,15 @@
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* About us page style */
 
 /* Slideshow container */
 .feature {
@@ -208,7 +214,7 @@ h3 {
 .details {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 30px;
@@ -228,4 +234,129 @@ h3 {
   text-align: center;
   margin: 30px;
   padding: 10px;
+}
+
+/* volunteer page style */
+
+.volunteer {
+  width: 100vw;
+  position: relative;
+  background-color: black;
+}
+
+.volunteer img {
+  width: 90vw;
+  height: auto;
+  z-index: -1;
+  opacity: 0.9;
+  margin: auto;
+  display: block;
+  padding: 30px;
+}
+
+.v-img1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  word-spacing: 25px;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.v-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin-top: -5px;
+}
+
+.v-img2,
+.v-img3 img {
+  width: 50vw;
+}
+
+.values li{
+  display: block;
+  width: 25%;
+  padding: 10px;
+  height: 20vh;
+  margin: auto;
+  border: 2px solid rgba(222, 184, 135, 0.979);
+  background-color: rgba(222, 184, 135, 0.829);
+  margin-top: 20px;
+border-radius: 15px;
+}
+
+.values h1{
+  padding-bottom:20px;
+}
+
+.v-form .form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+form input{
+  margin: 10px;
+  width: 20vw;
+  padding: 10px;
+  outline: none;
+}
+
+.tc{
+
+  display: flex;
+  padding: 10px;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tc input{
+  margin: 10px;
+  width: auto;
+  padding: 10px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
+  outline: none;
+}
+
+.btn{
+  padding: 15px;
+  width: 25vh;
+  background-color: black;
+  color: #ffffff;
+  margin-top: 10px;
+  outline: none;
+}
+
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.788);
+  box-shadow: 2px 2px 5px black;
+  color: rgba(0, 255, 0, 0.61);
 }
