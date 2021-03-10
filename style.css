@@ -207,7 +207,7 @@ h3 {
   height: 40vh;
   margin-top: 40px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: rgba(0, 0, 0, 0.938);
   color: #ffffffef;
 }
 
@@ -241,7 +241,7 @@ h3 {
 .volunteer {
   width: 100vw;
   position: relative;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.938);
   font-family: "Akaya Telivigala", cursive;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Redressed", cursive;
@@ -272,11 +272,19 @@ h3 {
   animation-direction: alternate;
 }
 
-@keyframes color-heading{
-  0%   {color: rgb(255, 62, 62);}
-  25%  {color: yellow;}
-  50%  {color: rgb(80, 80, 255);}
-  100% {color: rgb(34, 255, 34);}
+@keyframes color-heading {
+  0% {
+    color: rgb(255, 62, 62);
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(80, 80, 255);
+  }
+  100% {
+    color: rgb(34, 255, 34);
+  }
 }
 
 .values {
@@ -387,3 +395,153 @@ form input {
   box-shadow: 2px 2px 5px black;
   color: rgba(0, 255, 0, 0.61);
 }
+
+/* Donate us page style */
+
+.md,
+.immu,
+.crf,
+.raksha,
+.du {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+.md {
+  background-color: rgba(0, 0, 0, 0.938);
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.md > #d1,
+#d2,
+#d3,
+#d4 {
+  width: 60vw;
+  height: auto;
+}
+
+.md h1,
+.md p,
+.md h3 {
+  width: 60vw;
+  height: auto;
+}
+
+#don1,
+#don3 {
+  padding: 13px;
+  margin: 20px;
+  border-radius: 25px;
+  outline: none;
+  font-weight:bolder;
+  font-size:medium;
+  color: rgba(0, 0, 0, 0.822);
+  animation: bg 2s linear 0s infinite alternate-reverse;
+}
+
+@keyframes bg {
+  0% {
+    background-color: rgb(255, 62, 62);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: rgb(80, 80, 255);
+  }
+  75% {
+    background-color: rgb(34, 255, 34);
+  }
+  100% {
+    background-color: rgb(255, 62, 62);
+  }
+}
+
+#don2{
+  border-radius: 25px;
+  padding: 13px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.md img{
+  width: 60vw;
+  height: auto;
+  margin: 30px;
+}
+
+.immu {
+  background-color: rgba(255, 235, 205, 0.808);
+  color: #000000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Redressed", cursive;
+}
+
+.immu h1,
+.immu p,
+.immu h3 {
+  width: 60vw;
+  height: auto;
+}
+
+.crf {
+  background-color: rgba(0, 0, 0, 0.938);
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Redressed", cursive;
+}
+
+.crf h1,
+.crf p,
+.crf h3 {
+  width: 60vw;
+  height: auto;
+}
+
+.raksha {
+  background-color: rgba(255, 235, 205, 0.808);
+  color: #000000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Redressed", cursive;
+}
+
+.raksha h1,
+.raksha p,
+.raksha h3 {
+  width: 60vw;
+  height: auto;
+}
+
+.du {
+  background-color: rgba(0, 0, 0, 0.938);
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Redressed", cursive;
+}
+
+.du h1,
+.du p,
+.du li {
+  width: 40vw;
+  height: auto;
+}
+
