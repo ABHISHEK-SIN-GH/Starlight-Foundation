@@ -272,6 +272,7 @@ h3 {
   align-items: center;
   text-align: center;
   width: 100vw;
+  background-color: rgba(255, 235, 205, 0.808);
 }
 
 .v-form {
@@ -281,6 +282,7 @@ h3 {
   align-items: center;
   width: 100vw;
   margin-top: -5px;
+  background-color: rgba(255, 235, 205, 0.808);
 }
 
 .v-img2,
@@ -295,7 +297,7 @@ h3 {
   height: 20vh;
   margin: auto;
   border: 2px solid rgba(222, 184, 135, 0.979);
-  background-color: rgba(222, 184, 135, 0.829);
+  background-color: rgba(255, 255, 255, 0.829);
   margin-top: 20px;
 border-radius: 15px;
 }
