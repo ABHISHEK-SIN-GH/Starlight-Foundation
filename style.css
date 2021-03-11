@@ -561,14 +561,14 @@ li a,
 
 li.dropdown {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 150px;
+  min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -588,3 +588,57 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
+                                                   /* Get in Touch */
+
+#gt{
+  background-color: white;
+}                                
+
+#gt:hover{
+  background-color: rgba(0, 0, 0, 0.938);
+ border-color: white;
+}
+
+#gt:hover a{
+color: white;  
+}
+
+
+
+                                                    /* Contact us page */
+
+.con{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.938);
+  color: #ffffff;
+  justify-content:center;
+  align-items: center;
+}                
+
+.c-form{
+width: 39vw;
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+justify-content: center;
+align-items: center;
+}
+
+.c-form form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-form input{
+  width: 15vw;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.938);
+}
+
