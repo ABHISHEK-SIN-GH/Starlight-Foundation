@@ -545,10 +545,7 @@ form input {
   height: auto;
 }
 
-
-
-
-                                                                  /* More */
+/* More */
 
 li a,
 .dropbtn {
@@ -589,56 +586,195 @@ li.dropdown {
   display: block;
 }
 
+/* Get in Touch */
 
-
-                                                   /* Get in Touch */
-
-#gt{
+#gt {
   background-color: white;
-}                                
+}
 
-#gt:hover{
+#gt:hover {
   background-color: rgba(0, 0, 0, 0.938);
- border-color: white;
+  border-color: white;
 }
 
-#gt:hover a{
-color: white;  
+#gt:hover a {
+  color: white;
 }
 
+/* Contact us page */
 
-
-                                                    /* Contact us page */
-
-.con{
+.con {
   display: flex;
   flex-direction: row;
   width: 100vw;
   height: auto;
   background-color: rgba(0, 0, 0, 0.938);
   color: #ffffff;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-}                
-
-.c-form{
-width: 39vw;
-display: flex;
-flex-direction: row;
-margin-top: 40px;
-justify-content: center;
-align-items: center;
 }
 
-.c-form form{
+.c-form {
+  width: 39vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-form form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.c-form input{
+.c-form input {
   width: 15vw;
   border: 0px;
   background-color: rgba(0, 0, 0, 0.938);
+  color: white;
+  border-bottom: 1px solid white;
 }
 
+.c-form textarea {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.938);
+  border-bottom: 1px solid white;
+  color: rgba(255, 255, 255, 0.568);
+  max-width: 31.5vw;
+  padding: 20px;
+}
+
+.c-content {
+  max-width: 30vw;
+  width: 27vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 180px;
+  margin-right: 20px;
+}
+
+.c-form input,
+textarea {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.c-form input:hover,
+textarea:hover {
+  border: 1px solid white;
+}
+
+.c-form button {
+  background-color: white;
+  color: #000000;
+}
+
+.c-form button:hover {
+  background-color: green;
+  color: rgb(255, 255, 255);
+}
+
+/* partner us page */
+
+.pc img {
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  opacity: 0.9;
+  margin: auto;
+  display: block;
+}
+
+.pc h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  word-spacing: 25px;
+  animation-name: color-heading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: auto;
+}
+
+.pc h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  height: auto;
+}
+
+.pc h3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  height: auto;
+}
+
+.pc button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 10vw;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  top: 89%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+  color: #000000;
+  height: auto;
+}
+
+.pc-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  background-color: rgba(255, 235, 205, 0.808);
+}
+
+.pc-forms p {
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Redressed", cursive;
+}
+
+.pc-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: auto;
+  outline: none;
+}
+
+.pc-btn:hover {
+  background-color: rgba(255, 0, 0, 0.699);
+  color: white;
+  border: 1px solid white;
+}
