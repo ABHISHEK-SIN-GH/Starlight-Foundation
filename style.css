@@ -708,7 +708,7 @@ textarea:hover {
   height: auto;
 }
 
-.pc h2 {
+.pc h2{
   position: absolute;
   transform: translate(-50%, -50%);
   top: 70%;
@@ -719,7 +719,7 @@ textarea:hover {
   height: auto;
 }
 
-.pc h3 {
+.pc h3{
   position: absolute;
   transform: translate(-50%, -50%);
   top: 80%;
@@ -777,4 +777,47 @@ textarea:hover {
   background-color: rgba(255, 0, 0, 0.699);
   color: white;
   border: 1px solid white;
+}
+
+
+#log{
+  animation: round 5s ease-in-out 1s infinite normal;
+}
+
+@keyframes round{
+  75% {
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: scale(1.4,1.4);
+  }
+}
+
+
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+#logo-head {
+  border-right: solid 5px rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+}
+
+/* Animation */
+#logo-head {
+  animation: animated-text 5s linear 0.5s infinite normal both,
+             animated-cursor 600ms linear infinite alternate-reverse;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 400px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
