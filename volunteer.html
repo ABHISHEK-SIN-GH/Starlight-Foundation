@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <title>Starlight Foundation</title>
 </head>
 
@@ -40,7 +41,11 @@
   <div class="volunteer">
     <div class="v-img1">
       <img src="./v1.webp" alt="v-img1" />
-      <h1>Volunteer Your Time</h1>
+      <h1 class="ml15">
+        <span class="word">Volunteer</span>
+        <span class="word">Your</span>
+        <span class="word">Time</span>
+      </h1>
     </div>
     <div id="v-hero">
       <h1 style="
@@ -125,20 +130,37 @@
     <div class="social">
       <ul>
         <li>
-          <i class="fa fa-instagram" style="font-size: 38px; color: red"></i>
+          <i class="fa fa-instagram" style="font-size: 38px;"></i>
         </li>
         <li>
-          <i class="fa fa-twitter" style="font-size: 38px; color: red"></i>
+          <i class="fa fa-twitter" style="font-size: 38px;"></i>
         </li>
         <li>
-          <i class="fa fa-facebook" style="font-size: 38px; color: red"></i>
+          <i class="fa fa-facebook" style="font-size: 38px;"></i>
         </li>
         <li>
-          <i class="fa fa-linkedin" style="font-size: 38px; color: red"></i>
+          <i class="fa fa-linkedin" style="font-size: 38px;"></i>
         </li>
       </ul>
     </div>
   </div>
+  <script>
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml15 .word',
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i
+      }).add({
+        targets: '.ml15',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
 </body>
 
 </html>
