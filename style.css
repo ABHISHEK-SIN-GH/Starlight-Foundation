@@ -781,20 +781,25 @@ textarea:hover {
 
 
 #log{
-  animation: round 5s ease-in-out 1s infinite normal;
+  animation: round 7s ease-in-out 1s infinite normal;
 }
 
 @keyframes round{
-  75% {
+  30% {
     transform: rotate(360deg);
   }
+  50%{
+    transform: scale(0.6,0.6);
+  }
+  70%{
+    transform: scale(1.2,1.2);
+  }
   100%{
-    transform: scale(1.4,1.4);
+    transform: rotate(360deg);
   }
 }
 
 
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 #logo-head {
   border-right: solid 5px rgba(255,255,255,.75);
@@ -804,20 +809,24 @@ textarea:hover {
 
 /* Animation */
 #logo-head {
-  animation: animated-text 5s linear 0.5s infinite normal both,
-             animated-cursor 600ms linear infinite alternate-reverse;
+  animation: animated-text 10s linear infinite normal,
+             animated-cursor 600ms linear infinite;
 }
 
 /* text animation */
 
 @keyframes animated-text{
-  from{width: 0;}
-  to{width: 400px;}
+  25% {width: 0;}
+  50% {width: 400px;}
+  75% {width: -400px;}
+  100% {width: 0;}
 }
 
 /* cursor animations */
 
 @keyframes animated-cursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+  25% {border-right-color: rgba(255,255,255,.75);}
+  50% {border-right-color: transparent;}
+  75% {border-left-color: rgba(255,255,255,.75);}
+  100% {border-right-color: transparent;}
 }
